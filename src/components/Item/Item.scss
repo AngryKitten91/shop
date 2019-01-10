@@ -1,0 +1,28 @@
+img {
+    width: 100%;
+}
+
+.o-flex__child {
+    // flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.c-item {
+    padding: 2%;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    flex-basis: 23%;
+    margin: 20px 0;
+}
+
+.c-promo{
+    font-weight: 700;
+    color: red;
+}
+
+.c-availability{
+    font-weight: 700;
+    color: darkblue;
+}
