@@ -1,0 +1,13 @@
+@import 'components/settings.scss';
+
+
+.c{
+    &-product__button{
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        background-color: $color-orange;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+}

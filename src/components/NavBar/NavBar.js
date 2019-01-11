@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { Component } from "react";
+import './NavBar.scss'
 
 import NavBatItem from 'components/NavBarItem'
 
@@ -18,7 +18,7 @@ const menu = [
 export default class NavBar extends Component {
     render(){
         return (
-            <div>
+            <div className="c-navbar">
                 {menu.map((elem, i)=>{
                     return <NavBatItem key={i} data={elem} />
                 })}

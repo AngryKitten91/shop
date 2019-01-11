@@ -1,28 +1,47 @@
-img {
-    width: 100%;
+@import 'components/settings.scss';
+
+.c {
+    &-item {
+        box-sizing: border-box;
+        @include border(1px, $color-dark-blue);
+        flex-basis: 30%;
+        margin: 20px;
+        border-radius: 5px;
+
+        &__content {
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        
+    }
+    &-item__content > * {
+        margin: 15px 0;
+    }
+
+    &-promo {
+        font-weight: 700;
+        color: red;
+    }
+
+    &-availability {
+        font-weight: 700;
+        color: darkblue;
+    }
 }
 
-.o-flex__child {
-    // flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+@media only screen and (max-width: 600px) {
+    .c {
 
-}
-
-.c-item {
-    padding: 2%;
-    box-sizing: border-box;
-    border: 2px solid grey;
-    flex-basis: 23%;
-    margin: 20px 0;
-}
-
-.c-promo{
-    font-weight: 700;
-    color: red;
-}
-
-.c-availability{
-    font-weight: 700;
-    color: darkblue;
+        &-item {
+            flex-basis: 100%;
+        }
+    }
 }

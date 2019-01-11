@@ -1,0 +1,14 @@
+@import 'components/settings.scss';
+
+.c{
+    &-navbar{
+        display: flex;
+        position: sticky;
+        z-index: 9999;
+        top: 0;
+        background-color: $color-green;
+        padding:20px;
+        margin-bottom: 30px;
+        @include border(1px, $color-dark-blue);
+    }
+}

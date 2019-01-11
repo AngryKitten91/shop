@@ -10,14 +10,13 @@ export default class Product extends Component {
 
     if (!product) {
       return (
-        <div>
+        <div className="c-product">
           <p>No such product</p>
         </div>
       );
     }
 
     const {
-      uuid,
       name,
       price,
       category,
@@ -28,13 +27,25 @@ export default class Product extends Component {
     } = product;
 
     return (
-      <div>
-        <div>{name}</div>
-        <div>{category}</div>
-        <div>{price}</div>
-        <div>{promotion}</div>
-        <div>{quantity}</div>
-        <div>{description}</div>
+      <div className="c-product">
+        <img src={imageUrl} alt="" />
+        <div className="c-product__info">
+          <h3>{name}</h3>
+          {promotion ? (
+            <p className="c-promo">PROMOTION!</p>
+          ) : (
+            <p>REGULAR PRICE</p>
+          )}
+          {quantity > 0 ? (
+            <p>Quantity: {quantity}</p>
+          ) : (
+            <p className="c-availability">PRODUCT NOT AVAILABLE</p>
+          )}
+          <div>Price: {price}$</div>
+          <div>Category: {category}</div>
+          <h3>Product description:</h3>
+          <div>{description}</div>
+        </div>
       </div>
     );
   }

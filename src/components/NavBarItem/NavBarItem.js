@@ -1,15 +1,15 @@
-import React, { Component, Fragment } from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
+import './NavBarItem.scss';
 
 export default class NavBarItem extends Component {
-  constructor(props) {
-    super(props);
-  }
+
   render() {
     const { name, adress } = this.props.data;
 
     return (
-      <div>
+      <div className="c-navbar__item">
         <Link to={`/${adress}`}>{name}</Link>
       </div>
     );

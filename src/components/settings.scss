@@ -1,0 +1,11 @@
+$color-white: #fff;
+$color-black: #000;
+$color-dark-blue: #112F41;
+$color-ocean-blue: #068587;
+$color-green: #4FB99F;
+$color-yellow: #F2B134;
+$color-orange: rgb(233, 110, 88);
+
+@mixin border($prop, $prop1) {
+    border: $prop solid $prop1;
+  }

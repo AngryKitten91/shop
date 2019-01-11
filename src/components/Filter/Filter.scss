@@ -1,0 +1,25 @@
+.c {
+    &-filter__form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        input,
+        select,
+        label {
+            font-size: 20px;
+
+        }
+
+        input[type='checkbox'] {
+            border-radius: 15px;
+            margin: 10px;
+            transform: scale(1.5);
+            z-index: -9999;
+        }
+    }
+
+    &-filter__form>* {
+        margin: 0 20px 0 0;
+    }
+}

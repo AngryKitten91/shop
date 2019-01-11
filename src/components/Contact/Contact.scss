@@ -1,0 +1,37 @@
+@import 'components/settings.scss';
+
+.c {
+    &-contact {
+        h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        &__section {
+            margin: 15px 0;
+
+            & input,
+            & textarea {
+                display: block;
+                margin: 20px 0;
+                padding: 10px;
+            }
+
+            textarea {
+                width: 500px;
+                height: 150px;
+            }
+
+        }
+
+        input,
+        select,
+        label,
+        textarea {
+            font-size: 20px;
+
+        }
+    }
+
+}

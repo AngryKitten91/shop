@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
+
 import "./Filter.scss";
 
 import Checkbox from "components/Checkbox";
@@ -38,8 +39,8 @@ export default class Filter extends Component {
     ];
 
     return (
-      <Fragment>
-        <form onSubmit={handleSubmit}>
+      <div className="c-filter">
+        <form className="c-filter__form" onSubmit={handleSubmit}>
           <input
             name="productName"
             placeholder="Enter name to filter"
@@ -59,7 +60,7 @@ export default class Filter extends Component {
             return <Checkbox key={i} data={elem} />;
           })}
         </form>
-      </Fragment>
+      </div>
     );
   }
 }
